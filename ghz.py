@@ -1,5 +1,7 @@
-# To run this file on a single gpu
+# For single-gpu :
 # python ghz.py --target nvidia
+# For multi-threaded cpu :
+# python ghz.py --target qpp-cpu
 
 import cudaq
 
@@ -9,11 +11,11 @@ def ghz_state(N):
     kernel.h(q[0])
     for i in range(N - 1):
       kernel.cx(q[i], q[i + 1])
- 
+
     kernel.mz(q)
     return kernel
 
-n = 30 
+n = 28
 print("Preparing GHZ state for", n, "qubits.")
 kernel = ghz_state(n)
 counts = cudaq.sample(kernel)
