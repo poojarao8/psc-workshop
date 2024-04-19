@@ -8,7 +8,7 @@ Login into the Bridges-2 machine.
 Step 2:
 Pull the repo and change to that directory.
 
-`$ git pull https://github.com/poojarao8/psc-workshop.git`
+`$ git clone https://github.com/poojarao8/psc-workshop.git`
 
 `$ cd psc-workshop`
 
