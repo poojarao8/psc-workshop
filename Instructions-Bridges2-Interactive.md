@@ -10,8 +10,9 @@ $ git pull https://github.com/poojarao8/psc-workshop.git
 $ cd psc-workshop
 
 Step 3:
-To request a gpu interactively:
+Request an interactive gpu allocation.
 $ interact -gpu
 
-Step 4: Starting cuda Quantum
+Step 4: 
+Run a CUDA-Q script.
 $ apptainer exec --nv /opt/packages/cuda-quantum/v0.7.0/cuda-quantum_0.7.0.sif /usr/bin/python my_first_kernel.py --target nvidia
