@@ -9,6 +9,7 @@ Step 2:
 Pull the repo and change to that directory.
 
 `$ git pull https://github.com/poojarao8/psc-workshop.git`
+
 `$ cd psc-workshop`
 
 Step 3:
